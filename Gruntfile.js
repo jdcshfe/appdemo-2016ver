@@ -50,6 +50,23 @@ module.exports = function(grunt) {
           ext: '.css'
         }]
       }
+    },
+
+    // Copies remaining files to places other tasks can use
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: 'www/',
+          dest: '../app2015-none/www/',
+          src: [
+            '**',
+            '!res',
+            '!img/bottom.png'
+          ]
+        }]
+      }
     }
   });
 
