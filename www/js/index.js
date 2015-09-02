@@ -266,7 +266,8 @@ $(function(){
         initSeckill: function(){
             var me = this;
             var seckillNode = $('#J_seckill');
-            var num = seckillNode.find('.items img').length;
+            var num = seckillNode.find('.items').attr('data-num');
+            num = parseInt(num);
             var offset = 20;
             seckillNode.css({
                 width: me.winW - offset
@@ -274,7 +275,7 @@ $(function(){
             seckillNode.find('.items').css({
                 width: me.winW * num
             }).find('img').css({
-                width: me.winW - offset
+                width: (me.winW - offset)*2
             });
             //
             var scaleW = me.getScaleSize(260, 1202);

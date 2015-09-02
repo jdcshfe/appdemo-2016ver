@@ -301,7 +301,8 @@ ul, li{
 /*隐藏滚动条*/
 .seckill .items-con::-webkit-scrollbar {display:none;}
 .seckill .items-con{
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     background-color: #FFF;
     position: relative;
     /*-webkit-overflow-scrolling: auto;*/
@@ -318,6 +319,7 @@ ul, li{
     height: 20px;
     right: 0;
     font-size: 11px;
+    display: none;
 }
 .seckill .percent span{
     display: inline-block;

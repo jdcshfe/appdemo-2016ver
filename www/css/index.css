@@ -88,11 +88,11 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 /*隐藏滚动条*/
 .seckill .items-con::-webkit-scrollbar { display: none; }
 
-.seckill .items-con { overflow: auto; background-color: #FFF; position: relative; /*-webkit-overflow-scrolling: auto;*/ -webkit-transform: translate3d(0, 0, 0); }
+.seckill .items-con { overflow-x: auto; overflow-y: hidden; background-color: #FFF; position: relative; /*-webkit-overflow-scrolling: auto;*/ -webkit-transform: translate3d(0, 0, 0); }
 
 .seckill .items img { float: left; }
 
-.seckill .percent { position: absolute; background-color: #FFF; left: 0; bottom: 2px; height: 20px; right: 0; font-size: 11px; }
+.seckill .percent { position: absolute; background-color: #FFF; left: 0; bottom: 2px; height: 20px; right: 0; font-size: 11px; display: none; }
 
 .seckill .percent span { display: inline-block; /*background-color: yellow;*/ /*float: left;*/ height: 14px; line-height: 14px; /*opacity: 0.5;*/ position: relative; color: #F63732; }
 
