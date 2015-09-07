@@ -275,7 +275,7 @@ $(function(){
             seckillNode.find('.items').css({
                 width: me.winW * num
             }).find('img').css({
-                width: (me.winW - offset)*2
+                width: (me.winW - offset)*2+5
             });
             //
             var scaleW = me.getScaleSize(260, 1202);
@@ -295,6 +295,11 @@ $(function(){
             setTimeout(function(){
                 appDom.seckillPercent();
             },1000);
+
+            //shop-list
+            $('.shop-scroll img').css({
+                width: (me.winW - offset)*3.9
+            });
         },
         bannerPos: function(index){
             var me = this;

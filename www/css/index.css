@@ -81,7 +81,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 .seckill { overflow: hidden; position: relative; padding: 0 10px; }
 
-.seckill .hd { position: absolute; left: 21.5%; top: 18.5%; width: 23%; height: 38%; }
+.seckill .hd { position: absolute; left: 32%; top: 18.5%; width: 23%; height: 38%; }
 
 .seckill .hd span { display: inline-block; font-size: 13px; margin-right: 3%; width: 26%; height: 20%; line-height: 20px; text-align: center; }
 
@@ -160,25 +160,25 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 .go-f3-1, .go-f3-5 { width: 100%; top: 22.5%; left: 0; }
 
-.go-f3-5 { top: 35.8%; }
+.go-f3-5 { top: 29.2%; }
 
-.go-f3-2, .go-f3-3, .go-f3-4 { width: 33%; left: 0; top: 29.2%; }
+.go-f3-2, .go-f3-3, .go-f3-4 { width: 33%; left: 0; top: 35.7%; }
 
 .go-f3-3 { left: 33%; }
 
 .go-f3-4 { width: 34%; left: 66%; }
 
-.go-f4-1, .go-f4-2, .go-f4-3, .go-f4-4 { width: 50%; left: 0; top: 44.5%; }
+.go-f4-1, .go-f4-2, .go-f4-3, .go-f4-4 { width: 50%; left: 0; top: 44.2%; }
 
-.go-f4-3, .go-f4-4 { top: 51.1%; }
+.go-f4-3, .go-f4-4 { top: 50.8%; }
 
 .go-f4-2, .go-f4-4 { left: 50%; }
 
 .go-f4-5, .go-f4-6, .go-f4-7, .go-f4-8, .go-f4-9, .go-f4-10, .go-f4-11, .go-f4-12 { width: 25%; left: 0; height: 5.6% !important; }
 
-.go-f4-5, .go-f4-6, .go-f4-7, .go-f4-8 { top: 57.6%; }
+.go-f4-5, .go-f4-6, .go-f4-7, .go-f4-8 { top: 57.4%; }
 
-.go-f4-9, .go-f4-10, .go-f4-11, .go-f4-12 { top: 63.3%; }
+.go-f4-9, .go-f4-10, .go-f4-11, .go-f4-12 { top: 63.0%; }
 
 .go-f4-6, .go-f4-10 { left: 25%; }
 
@@ -192,6 +192,12 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 .go-f3-0 { top: 21.4%; width: 13%; }
 
-.go-f4-0 { top: 43.3%; width: 13%; }
+.go-f4-0 { top: 43%; width: 13%; }
+
+.shop-scroll::-webkit-scrollbar { display: none; }
+
+.shop-scroll { position: absolute; top: 29.2%; left: 10px; right: 10px; overflow-x: auto; overflow-y: hidden; background-color: #FFF; width: auto; }
+
+.shop-scroll:active { background-color: #FFF; }
 
 /*# sourceMappingURL=index.css.map */
