@@ -1,3 +1,4 @@
+@import "bourbon";
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -258,12 +259,17 @@ ul, li{
     position: absolute;
     left: 0;
     top: 0;
-    right: 0;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
+    width: 100%;
+    // right: 0;
+    @include transition(all 0.6s ease);
+    // -webkit-transform-style: preserve-3d;
 }
 .banner li{
     float: left;
+}
+.banner li img{
+    display: block;
+    // -webkit-transform:translate3d(0,0,0);
 }
 .banner .dots{
     position: absolute;
@@ -477,10 +483,14 @@ ul, li{
     top: 7.5%;
     width: 33%;
 }
-.go-f2-1, .go-f2-3, .go-f2-4, .go-f2-5{
+.go-f2-1, .go-f2-3, .go-f2-4, .go-f2-5, .go-f2-6{
     left: 0;
     top: 14.1%;
     width: 33%;
+}
+.go-f2-3, .go-f2-4, .go-f2-5, .go-f2-6{
+    width: 25%;
+    height: 5.6% !important;
 }
 .go-f2-1, .go-f2-2{
     top: 7.5%;
@@ -490,16 +500,18 @@ ul, li{
     left: 33%;
 }
 .go-f2-4{
-    left: 33%;
+    left: 25%;
 }
 .go-f2-5{
-    left: 66%;
-    width: 34%;
+    left: 50%;
+}
+.go-f2-6{
+    left: 75%;
 }
 
 .go-f3-1, .go-f3-5{
     width: 100%;
-    top: 22.5%;
+    top: 21.7%;
     left: 0;
 }
 .go-f3-5{
@@ -508,7 +520,7 @@ ul, li{
 .go-f3-2, .go-f3-3, .go-f3-4{
     width: 33%;
     left: 0;
-    top: 35.7%;
+    top: 34.8%;
 }
 .go-f3-3{
     left: 33%;
@@ -520,10 +532,10 @@ ul, li{
 .go-f4-1, .go-f4-2, .go-f4-3, .go-f4-4{
     width: 50%;
     left: 0;
-    top: 44.2%;
+    top: 43.3%;
 }
 .go-f4-3, .go-f4-4{
-    top: 50.8%;
+    top: 49.9%;
 }
 .go-f4-2, .go-f4-4{
     left: 50%;
@@ -535,10 +547,10 @@ ul, li{
     height: 5.6% !important;
 }
 .go-f4-5, .go-f4-6, .go-f4-7, .go-f4-8{
-    top: 57.4%;
+    top: 56.5%;
 }
 .go-f4-9, .go-f4-10, .go-f4-11, .go-f4-12{
-    top: 63.0%;
+    top: 62.1%;
 }
 .go-f4-6, .go-f4-10{
     left: 25%;
@@ -575,7 +587,7 @@ ul, li{
 .shop-scroll::-webkit-scrollbar{display:none;}
 .shop-scroll{
     position: absolute;
-    top: 29.2%;
+    top: 28.3%;
     left: 10px;
     right: 10px;
     overflow-x: auto;

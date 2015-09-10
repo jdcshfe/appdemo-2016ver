@@ -58,7 +58,7 @@ var app = {
 $(function(){
     var appDom = {
         barVisible: true,
-        barTimeDelay: 500,
+        barTimeDelay: 300,
         touchStartID: -1,
         touchEndID: -1,
         touchStart: null,
@@ -307,9 +307,10 @@ $(function(){
             //pos
             var pos = index * me.winW;
             pos = -pos;
+            // pos += 0.001;
             bannerPics.css({
-                '-webkit-transform': 'translateX('+pos+'px)',
-                'transform': 'translateX('+pos+'px)'
+                '-webkit-transform': 'translate3d('+pos+'px, 0, 0)',
+                'transform': 'translate3d('+pos+'px, 0, 0)'
             });
             me.bannerIndex = index;
             //dots
