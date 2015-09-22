@@ -1,4 +1,4 @@
 # appdemo-2016ver
-appdemo 2016 概念版
+appdemo 2016 竖版
 
 竖版
